@@ -23,14 +23,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6739442523:AAHHA5HZmU6sqI-elmhTs8dwHqfhTizWwnQ",
-             api_id=22609670,
-             api_hash= "3506d8474ad1f4f5e79b7c52a5c3e88d")
+             bot_token= "7159828976:AAFlwpuCRlnmIx1wiV65hMwyEbH-8i7EvwU",
+             api_id=29611474,
+             api_hash= "43b3fdc649a8266de1b8ba3facc4aa75)
 
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"HELLO I AM TXT DOWNLOADER BOT MADE BY TIGER BOSS [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /BOSS")
+    editable = await m.reply_text(f"HELLO I AM TXT BOT [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /BOSS")
 
 
 @bot.on_message(filters.command("stop") & filters.user(ADMINS))
